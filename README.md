@@ -1,4 +1,4 @@
-# bookshelf-frontend app
+# library-frontend app
 ### (currently does very little)
 - [Install node](https://nodejs.org/en/download/)
 - Clone repo and go into directory
