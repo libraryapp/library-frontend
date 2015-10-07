@@ -3,9 +3,25 @@
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/foundation.css' />
   </head>
   <body>
+  <div class="row">
     <h1>{{ title }}</h1>
     <p>The (very) start of something beautiful</p>
+  </div>
+    <div class="row">
+    <h4>Latest additions</h4>
+      <div class="large-12 columns">
+      {{#booksList}}
+        <div class="large-6 medium-12 small-6 columns">
+          <div class="book-box">
+            {{title}}</br>
+              {{author}}
+          </div>
+        </div>
+      {{/booksList}}
+      </div>
+    </div>
   </body>
 </html>
