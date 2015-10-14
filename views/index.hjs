@@ -13,19 +13,34 @@
     </div>
     <div class="large-8 columns">
       <div class="large-12 columns">
-        <div class="row">
-          <div class="large-3 columns button">Java</div>
-          <div class="large-3 columns button">Javascript</div>
-          <div class="large-3 columns button">HTML</div>
-          <div class="large-3 columns button">CSS</div>
+        <div class="row filter-row">
+          <a href="#"><div class="large-3  medium-3  small-3 columns filter-button">
+            <div class="inner-filter-button">Java</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">Javascript</div>
+          </div></a>
+          <a href="#"><div class="large-3 medium-3  small-3 columns filter-button">
+            <div class="inner-filter-button">HTML</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">CSS</div>
+          </div></a>
         </div>
         <div class="row">
           <div class="menu-line"></div>
-          <div class="large-3 columns button">Katas</div>
-          <div class="large-3 columns button">User design</div>
-          <div class="large-3 columns button">Agile</div>
-          <div class="large-3 columns button">About</div>
-        </div>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">Katas</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">User design</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">Agile</div>
+          </div></a>
+          <a href="#"><div class="large-3 medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">About</div>
+          </div></a>
         </div>
       </div>
     </div>

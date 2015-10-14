@@ -15,18 +15,23 @@ a {
   margin-bottom:20px;
 }
 
-.filter-bar {
-  padding-top:20px;
+.filter-row {
+  padding-top:10px;
 }
 
 .filter-button {
-  margin: 5px;
-  background: white;
-  border: black solid 2px;
+  padding: 2px !important;
+  background: grey;
+  border: white solid 5px;
   text-align: center;
 }
 
+.inner-filter-button {
+  background: white;
+  padding:2px
+}
+
 .menu-line {
-  margin: 10px;
+  margin: 10px 100px;
   border: black solid 1px;
 }
