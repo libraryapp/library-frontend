@@ -7,8 +7,28 @@
   </head>
   <body>
   <div class="row">
-    <h1>{{ title }}</h1>
-    <p>The (very) start of something beautiful</p>
+    <div class="large-4 columns">
+      <h1>{{ title }}</h1>
+      <p>The (very) start of something beautiful</p>
+    </div>
+    <div class="large-8 columns">
+      <div class="large-12 columns">
+        <div class="row">
+          <div class="large-3 columns button">Java</div>
+          <div class="large-3 columns button">Javascript</div>
+          <div class="large-3 columns button">HTML</div>
+          <div class="large-3 columns button">CSS</div>
+        </div>
+        <div class="row">
+          <div class="menu-line"></div>
+          <div class="large-3 columns button">Katas</div>
+          <div class="large-3 columns button">User design</div>
+          <div class="large-3 columns button">Agile</div>
+          <div class="large-3 columns button">About</div>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
     <div class="row">
     <h4>Latest additions</h4>
