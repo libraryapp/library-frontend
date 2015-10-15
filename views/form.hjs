@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/foundation.css' />
+</head>
+<body>
+<div class="row">
+    <h1>{{ title }}</h1>
+    <p>I'm just playing at the moment</p>
+</div>
+
+<!--this is the bit that it will post-->
+<form action="/complete" method="post" id="singlePageForm" >
+    <div class="row">
+        <div class="book-name large-6 columns">
+            <label>What is the name of the book?
+                <input type="text" placeholder="Book name" name="bookName" />
+            </label>
+        </div>
+        <div class=" large-6 columns">
+            <label>Who is the author?
+                <input type="text" placeholder="Author name" name="author" />
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <button id="send" class="button round" type="submit">Add a book</button>
+    </div>
+</form>
+</body>
+</html>
