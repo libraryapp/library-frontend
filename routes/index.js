@@ -30,7 +30,7 @@ router.get('/form', function(req, res) {
 
 router.post('/complete', function(req, res) {
   console.log(req.body);
-  res.send('You sent the name "' + req.body.bookName + '".');
+  res.send('You sent the details for "' + req.body.title + '", by ' + req.body.authorFirst + ' ' + req.body.authorLast + '.');
 });
 
 
