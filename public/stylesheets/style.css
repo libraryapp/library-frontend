@@ -31,6 +31,10 @@ a {
   padding:2px
 }
 
+.add-book-button {
+  padding: 20px 0px 0px 40px;
+}
+
 .menu-line {
   margin: 10px 100px;
   border: black solid 1px;
