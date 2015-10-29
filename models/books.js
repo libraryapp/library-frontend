@@ -1,6 +1,4 @@
 var axios = require('axios');
-//var booksList = function(){
-
 
 module.exports = function () {
   return {
