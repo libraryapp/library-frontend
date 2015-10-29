@@ -20,14 +20,6 @@ router.get('/form', function(req, res) {
   });
 });
 
-// Post the form
-//router.post('/form',function(request,response){
-////    var query1=request.body.var1;
-////    var query2=request.body.var2;
-//    res.json(req.body); // handle the user form data
-//    console.log(req.body);
-//});
-
 router.post('/complete', function(req, res) {
   console.log(req.body);
   res.send('You sent the details for "' + req.body.title + '", by ' + req.body.authorFirst + ' ' + req.body.authorLast + '.');
