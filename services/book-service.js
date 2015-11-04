@@ -8,14 +8,17 @@ var axios = require('axios');
 module.exports = function() {
   return {
     getBookCover: function(isbn) {
-      var defaultUrl = 'http://covers.openlibrary.org/b/isbn/' + isbn + '-M.jpg';
+      var defaultUrl = 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn;
       var newUrl;
       return axios.get(defaultUrl)
         .then(function (response) {
-          newUrl = defaultUrl;
+          newUrl = defaultUrl.volumeInfo.imageLinks.smallThumbnail;
           return newUrl;
         })
         .catch(function (response) {
+          console.log(response);
+                    newUrl = defaultUrl.volumeInfo.imageLinks.smallThumbnail;
+
           newUrl = 'https://placehold.it/250x250?text=isbn+' + isbn;
           return newUrl;
         })

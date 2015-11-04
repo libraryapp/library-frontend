@@ -40,3 +40,28 @@ a {
   margin: 10px 100px;
   border: black solid 1px;
 }
+
+.latestBooks {
+  text-align: center;
+  height: 400px;
+  margin: 20px 0 20px 0;
+  position: relative;
+}
+
+.latestContent {
+  background: none repeat scroll 0 0 #FFFFFF;
+  opacity: 0.5;
+  top:20%;
+  left:40%;
+  position: absolute;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+.info-box {
+  border: 2px black solid;
+  height: 100px;
+  text-align: center;
+  margin-top:20px;
+}
