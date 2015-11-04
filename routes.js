@@ -1,16 +1,18 @@
 var express = require('express');
 var router = express.Router();
-var books = require('../models/books.js');
+var books = require('./models/books.js');
+var getCover = require('./services/book-service.js');
+var Promise = require('promise');
 
 /* GET home page. */
 router.get('/', function(req, res) {
   books()
   .booksList()
   .then(function (response) {
-  console.log(response.data)
-  res.render('index', { title: 'A Bookshelf app',
-                        booksList: response.data
-                      });
+    res.render('index', { title: 'A Bookshelf app',
+                          booksList: response.data
+                          }
+    );
   })
 });
 
@@ -20,7 +22,7 @@ router.get('/form', function(req, res) {
   });
 });
 
-// Post the form
+// POST the form
 //router.post('/form',function(request,response){
 ////    var query1=request.body.var1;
 ////    var query2=request.body.var2;
@@ -30,8 +32,7 @@ router.get('/form', function(req, res) {
 
 router.post('/complete', function(req, res) {
   console.log(req.body);
-  res.send('You sent the name "' + req.body.bookName + '".');
+  res.send('You sent the details for "' + req.body.title + '", by ' + req.body.authorFirst + ' ' + req.body.authorLast + '.');
 });
-
 
 module.exports = router;

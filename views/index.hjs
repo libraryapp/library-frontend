@@ -7,20 +7,78 @@
   </head>
   <body>
   <div class="row">
-    <h1>{{ title }}</h1>
-    <p>The (very) start of something beautiful</p>
+    <div class="large-12">
+      <div class="large-4 small-8 columns">
+        <h1>{{ title }}</h1>
+        <p>The (very) start of something beautiful</p>
+      </div>
+      <div class="large-2 small-4 columns">
+        <a href="/form" class="button radius alert">Add a book!</a>
+      </div>
+    </div>
+    <div class="large-8 columns">
+      <div class="large-12 columns">
+        <div class="row filter-row">
+          <a href="#"><div class="large-3  medium-3  small-3 columns filter-button">
+            <div class="inner-filter-button">Java</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">Javascript</div>
+          </div></a>
+          <a href="#"><div class="large-3 medium-3  small-3 columns filter-button">
+            <div class="inner-filter-button">HTML</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">CSS</div>
+          </div></a>
+        </div>
+        <div class="row">
+          <div class="menu-line"></div>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">Katas</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">User design</div>
+          </div></a>
+          <a href="#"><div class="large-3  medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">Agile</div>
+          </div></a>
+          <a href="#"><div class="large-3 medium-3 small-3 columns filter-button">
+            <div class="inner-filter-button">About</div>
+          </div></a>
+        </div>
+      </div>
+    </div>
   </div>
     <div class="row">
     <h4>Latest additions</h4>
-      <div class="large-12 columns">
-      {{#booksList}}
-        <div class="large-6 medium-12 small-6 columns">
-          <div class="book-box">
-            {{title}}</br>
-              {{author}}
-          </div>
-        </div>
-      {{/booksList}}
+      <div class="large-12 columns latestBooks">
+        <img src="/img/latestBooks.png" style="height:100%">
+                <div class="latestContent">
+                  Head First Java
+                </div>
+      <!--{{#booksList}}-->
+        <!--<div class="large-4 medium-4 small-6 columns">-->
+          <!--<div class="book-box">-->
+            <!--{{title}}</br>-->
+              <!--{{authorFirst}} {{authorLast}}-->
+          <!--</br>-->
+          <!--<img src="{{coverUrl}}"></img>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--{{/booksList}}-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns info-box">
+        <h5>What we are</h5>
+        Description
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns info-box">
+        <h5>Who we are</h5>
+        Me
       </div>
     </div>
   </body>
