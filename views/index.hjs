@@ -55,18 +55,8 @@
       <div class="large-12 columns latestBooks">
         <img src="/img/latestBooks.png" style="height:100%">
                 <div class="latestContent">
-                  Head First Java
+                  <!--Head First Java-->
                 </div>
-      <!--{{#booksList}}-->
-        <!--<div class="large-4 medium-4 small-6 columns">-->
-          <!--<div class="book-box">-->
-            <!--{{title}}</br>-->
-              <!--{{authorFirst}} {{authorLast}}-->
-          <!--</br>-->
-          <!--<img src="{{coverUrl}}"></img>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--{{/booksList}}-->
       </div>
     </div>
     <div class="row">

@@ -1,6 +1,5 @@
 var assert = require('chai').assert;
 var nock = require('nock');
-var request = require('supertest');
 var bookService = require('../../services/book-service.js');
 
 describe('The book cover function', function () {
