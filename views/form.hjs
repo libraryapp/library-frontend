@@ -12,32 +12,48 @@
 </div>
 
 <!--this is the bit that it will post-->
-<form action="/complete" method="post" id="singlePageForm" >
-    <div class="row">
-        <div class="book-name large-3 columns">
-            <label>What is the name of the book?
-                <input type="text" placeholder="Book name" name="title" />
-            </label>
+<div class="form-holder large-6 small-12 large-centered columns">
+    <form action="/complete" method="post" id="singlePageForm" >
+        <div class="book-name large-6 columns">
+            <label>What is the name of the book?</label>
         </div>
-        <div class=" large-3 columns">
-            <label>Author's first names
-                <input type="text" placeholder="Author's first names" name="authorFirst" />
-            </label>
+        <div class="book-name large-6 columns">
+            <input type="text" placeholder="Book name" name="title" />
         </div>
-        <div class=" large-3 columns">
-            <label>Author's surname?
-                <input type="text" placeholder="Author's surname" name="authorLast" />
-            </label>
+        <div class="large-6 columns">
+            <label>Subject?</label>
         </div>
-        <div class=" large-3 columns">
-            <label>ISBN?
-                <input type="text" placeholder="ISBN" name="isbn" />
-            </label>
+        <div class="large-6 columns">
+            <select name="subject">
+                <option disabled selected> -- select an option -- </option>
+                <option value="Java">Java</option>
+                <option value="Javascript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select>
         </div>
-    </div>
-    <div class="row">
-        <button id="send" class="button round" type="submit">Add a book</button>
-    </div>
-</form>
+        <div class=" large-6 columns">
+            <label>Author's surname?</label>
+        </div>
+        <div class=" large-6 columns">
+            <input type="text" placeholder="Author's surname" name="authorLast" />
+        </div>
+        <div class=" large-6 columns">
+            <label>Author's first names</label>
+        </div>
+        <div class=" large-6 columns">
+            <input type="text" placeholder="Author's first names" name="authorFirst" />
+        </div>
+        <div class=" large-6 columns">
+            <label>ISBN?</label>
+        </div>
+        <div class=" large-6 columns">
+            <input type="text" placeholder="ISBN" name="isbn" />
+        </div>
+        <div class="row">
+            <button id="send" class="button round" type="submit">Add a book</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>
