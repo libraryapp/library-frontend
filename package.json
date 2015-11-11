@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "mocha --recursive -R spec ./test/ && nodemon ./bin/www",
     "test": "mocha --recursive -R spec ./test/"
   },
   "dependencies": {
@@ -14,6 +14,8 @@
     "express": "~4.13.1",
     "hjs": "~0.0.6",
     "morgan": "~1.6.1",
+    "nock": "^2.17.0",
+    "promise": "^7.0.4",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
