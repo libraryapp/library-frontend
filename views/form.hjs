@@ -14,22 +14,27 @@
 <!--this is the bit that it will post-->
 <form action="/complete" method="post" id="singlePageForm" >
     <div class="row">
-        <div class="book-name large-3 columns">
+        <div class="book-name large-5 columns">
             <label>What is the name of the book?
                 <input type="text" placeholder="Book name" name="title" />
             </label>
         </div>
-        <div class=" large-3 columns">
+        <div class=" large-5 columns">
+            <label>Subject?
+                <input type="text" placeholder="Subject" name="subject" />
+            </label>
+        </div>
+        <div class=" large-4 columns">
             <label>Author's first names
                 <input type="text" placeholder="Author's first names" name="authorFirst" />
             </label>
         </div>
-        <div class=" large-3 columns">
+        <div class=" large-4 columns">
             <label>Author's surname?
                 <input type="text" placeholder="Author's surname" name="authorLast" />
             </label>
         </div>
-        <div class=" large-3 columns">
+        <div class=" large-4 columns">
             <label>ISBN?
                 <input type="text" placeholder="ISBN" name="isbn" />
             </label>

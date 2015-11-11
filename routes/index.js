@@ -21,6 +21,9 @@ router.get('/form', function(req, res) {
 });
 
 router.post('/complete', function(req, res) {
+  books().addNewBook(req.body)
+  .then(function (){
+  console.log('hello')})
   console.log(req.body);
   res.send('You sent the details for "' + req.body.title + '", by ' + req.body.authorFirst + ' ' + req.body.authorLast + '.');
 });
