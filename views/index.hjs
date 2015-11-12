@@ -51,12 +51,37 @@
     </div>
   </div>
     <div class="row">
-    <h4>Latest additions</h4>
-      <div class="large-12 columns latestBooks">
-        <img src="/img/latestBooks.png" style="height:100%">
-                <div class="latestContent">
-                  <!--Head First Java-->
-                </div>
+      <div class="latestContent">
+        <h4>Latest additions</h4>
+        <div class="large-8 small-12 large-centered columns latestBooks">
+          <div class="large-4 small-4 columns bookend">
+            <img src="/img/bookend.png" style="height:100%">
+          </div>
+        
+          <div class="large-8 small-8 columns latestBooks">
+              <div class="book1 latestBook">
+                {{booksList.4.title}}<br>
+                {{booksList.4.authorFirst}} {{booksList.4.authorLast}} 
+              </div>
+              <div class="book2 latestBook">
+                {{booksList.3.title}}<br>
+                {{booksList.3.authorFirst}} {{booksList.3.authorLast}} 
+              </div>
+              <div class="book3 latestBook">
+                {{booksList.2.title}}<br>
+                {{booksList.2.authorFirst}} {{booksList.2.authorLast}} 
+              </div> 
+              <div class="book4 latestBook">
+                {{booksList.1.title}}<br>
+                {{booksList.1.authorFirst}} {{booksList.1.authorLast}} 
+              </div> 
+              <div class="book5 latestBook">
+                {{booksList.0.title}}<br>
+                {{booksList.0.authorFirst}} {{booksList.0.authorLast}} 
+              </div>   
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">

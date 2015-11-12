@@ -9,11 +9,13 @@ router.get('/', function(req, res) {
   books()
   .booksList()
   .then(function (response) {
+    var latestBooks = response.data.slice(response.data.length-5, response.data.length);
+    console.log(latestBooks);
     res.render('index', { title: 'A Bookshelf app',
-                          booksList: response.data
+                          booksList: latestBooks
                           }
     );
-  })
+  });
 });
 
 /* GET form page. */
@@ -22,20 +24,13 @@ router.get('/form', function(req, res) {
   });
 });
 
-// POST the form
-//router.post('/form',function(request,response){
-////    var query1=request.body.var1;
-////    var query2=request.body.var2;
-//    res.json(req.body); // handle the user form data
-//    console.log(req.body);
-//});
-
+/* POST form. */
 router.post('/complete', function(req, res) {
   books().addNewBook(req.body)
   .then(function (){
-  console.log('hello')})
-  console.log(req.body);
-  res.send('You sent the details for "' + req.body.title + '", by ' + req.body.authorFirst + ' ' + req.body.authorLast + '.');
+    console.log(req.body);
+    res.send('You sent the details for "' + req.body.title + '", by ' + req.body.authorFirst + ' ' + req.body.authorLast + '.');
+  });
 });
 
 module.exports = router;
